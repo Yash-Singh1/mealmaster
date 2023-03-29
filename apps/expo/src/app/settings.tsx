@@ -7,8 +7,6 @@ import { useAtom } from "jotai";
 import { api } from "../utils/api";
 import { getPushToken } from "../utils/getPushToken";
 import { tokenAtom } from "../utils/store";
-import * as SecureStore from "expo-secure-store";
-import { TOKEN } from "../utils/constants";
 
 // Plan for settings page:
 // - Change password
@@ -18,7 +16,7 @@ import { TOKEN } from "../utils/constants";
 // - Enable/disable notifications
 
 const Settings: React.FC = () => {
-  const [token, setToken] = useAtom(tokenAtom);
+  const [token] = useAtom(tokenAtom);
 
   const [isEnabled, setIsEnabled] = useState(false);
 

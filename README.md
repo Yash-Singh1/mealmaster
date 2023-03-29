@@ -1,6 +1,6 @@
 # `mealmaster`
 
-A nutrition app that helps you find recipes and recommendations based on your diet.
+A nutrition app that helps you find recipes and recommendations based on your diet. Worked in collaboration with [@shreyvish5678](https://github.com/shreyvish5678) for [Cross-Club Hacks](https://cross-club.github.io/).
 
 ## Inspiration
 Our main source of inspiration came from our nutrition lesson in Biology Class. As me and my friend were talking about nutrition, and how it’s often overlooked. Then we found out about this hackathon. Knowing that we wanted to help people with nutrition, and now had the chance to do so, we began!

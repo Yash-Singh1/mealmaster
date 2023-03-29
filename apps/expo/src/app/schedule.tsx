@@ -7,8 +7,6 @@ import { api } from "../utils/api";
 import { tokenAtom } from "../utils/store";
 
 const Schedule: React.FC = () => {
-  const newReminder = api.schedule.create.useMutation();
-
   const [token] = useAtom(tokenAtom);
   const reminders = api.schedule.getAll.useQuery({
     token: token as string,
@@ -36,8 +34,8 @@ const Schedule: React.FC = () => {
         </TouchableOpacity>
         {reminders.data && reminders.data.length ? null : <Text className="text-base mt-2 w-full text-center">No reminders set</Text>}
         <View className="mt-2">
-          {reminders.data?.map((reminder) => {
-            return <Text>{reminder.title}</Text>;
+          {reminders.data?.map((reminder, index) => {
+            return <Text key={index}>{reminder.title}</Text>;
           })}
         </View>
       </View>
