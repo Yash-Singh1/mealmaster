@@ -25,7 +25,7 @@ const Plan: React.FC = () => {
   if (!id) throw new Error("ID required for meal plan.");
 
   const planQuery = api.plans.byId.useQuery({
-    id: id as string,
+    id,
     token: token as string,
   });
 

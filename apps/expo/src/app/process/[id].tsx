@@ -15,7 +15,7 @@ const Process = () => {
 
   const processQuery = api.process.openai.useQuery({
     token: token as string,
-    planId: id as string,
+    planId: id,
   });
 
   return processQuery.data ? (
